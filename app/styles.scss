@@ -1,0 +1,37 @@
+@import '../variables';
+@font-face {
+    font-family: raleway;
+    src: url('../raleway/Raleway-Medium.ttf');
+}
+@font-face {
+    font-family: ralewayBold;
+    src: url('../raleway/Raleway-Bold.ttf');
+}
+h1,h2,h3,h4,h5 {
+  background-color: transparent;
+}
+h1,h2,h3 {
+  font-family: ralewayBold;
+}
+* {
+  padding: 0;
+  margin: 0 auto;
+  font-family: raleway;
+  background-color: $light;
+  color: $dark;
+}
+a:hover, button:hover {
+  cursor: crosshair;
+}
+
+  a, button {
+  border-bottom: 1px solid $secondary;
+  }
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: $light;
+}
+//extra brown
+//40,33,23

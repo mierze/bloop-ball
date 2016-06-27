@@ -1,0 +1,93 @@
+<div class="app">
+
+
+<nav>
+  <h1>Bloop Ball</h1>
+  <h5>A game of wit, creativity and agility</h5>
+  <a *ngFor="let topic of topics" (click)="setTopic(topic)" [ngClass]="{'active-tab': topic.toLowerCase() == currentTopic}">{{topic}}</a>
+</nav>
+<div class="content">
+
+
+<section *ngIf="currentTopic == 'origins'">
+
+  <h2>Origins</h2>
+  <ul>
+    <li>
+      One
+    </li>
+  </ul>
+</section>
+
+
+<section *ngIf="currentTopic == 'rules'">
+  <h2>Setup</h2>
+  <ul>
+    <li>
+      One (7-10') x (4-6') rug
+    </li><li>
+      Room of minimum 15' x 10'
+    </li>
+    <li>
+      Rubber ball, 1/2 inflation
+    </li>
+    <li>
+      2 or 4 players
+    </li>
+  </ul>
+  <h2>Rules</h2>
+  <ul>
+    <li>
+      The rug serves as the 'net', the point of transfer from one player to another.
+    </li>
+    <li>
+      Reminiscent of table tennis, the serve must bounce on either player's side.
+    </li>
+    <li>
+      To serve toss the ball with your left hand and strike the ball with one fluent motion.
+    </li>
+    <li>
+some part of your body other than your arms (in this case similar to soccer).
+    </li>
+    <li>
+      You are only permitted to use your hand once per possesion.
+    </li>
+    <li>
+      You may only allow the ball to bounce once on the surface to your side of the rug.
+    </li>
+    <li>
+inbounds.
+    </li>
+    <li>
+      A player may strike the ball while in the air so long as they last set foot
+      on their side of the ends of the rug. They may not land on any part of the rug
+      if that is the last touch of possesion.
+    </li>
+  </ul>
+  <p>
+    Any questions? Check out our <a (click)="setTopic('videos')">instructional video</a> to see if those questions of
+    yours may be clarified.
+  </p>
+</section>
+
+<section *ngIf="currentTopic == 'videos'">
+
+  <h2>Videos</h2>
+  <ul>
+    <li>
+      One
+    </li>
+  </ul>
+</section>
+
+<section *ngIf="currentTopic == 'news'">
+
+  <h2>News</h2>
+  <ul>
+    <li>
+      One
+    </li>
+  </ul>
+</section>
+</div>
+</div>
